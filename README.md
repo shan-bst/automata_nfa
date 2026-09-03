@@ -10,11 +10,9 @@ The machine reads the opening delimiter `/*`, then the comment body, then the cl
 
 ## Diagram
 
-![NFA Diagram](diagram.png)
-
-*(Upload your diagram image to the repo and name it `diagram.png` — or change the filename above to match whatever you upload.)*
-
 The diagram shows five "working" states `q0 → q1 → q2 → q3 → q4` in a left-to-right chain, each connected by the symbol that advances it (`/`, `*`, `*`, `/`). `q2` and `q3` also have self-loops for the characters that don't advance the match, and a curved edge from `q3` back to `q2` for when a run of stars is broken by an ordinary character. Every state also has a transition into `qtrap` (shown as dashed red arrows) for any symbol not already accounted for.
+
+![State Diagram](state_diagram.png)
 
 ## States
 
@@ -68,3 +66,7 @@ F  = { q4 }
 **Accepted:** `/*s*/`  `/*b*/`  `/**/`  `/***/`  `/*sbs*bsb*/`  `/*s/b*/`
 
 **Rejected:** `/**`  `/**/s/*bb*/`  `sbs/**/bs`  `/*/`  `/**b/`  `//sbsb`
+
+## Handwritten
+
+![Handwritten Work](handwritten.png)
