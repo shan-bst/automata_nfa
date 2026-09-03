@@ -65,9 +65,11 @@ F  = { q4 }
 
 **Accepted:** `/*s*/`  `/*b*/`  `/**/`  `/***/`  `/*sbs*bsb*/`  `/*s/b*/`
 
+![Sample](acceptedsample.png)
 
 **Rejected:** `/**`  `/**/s/*bb*/`  `sbs/**/bs`  `/*/`  `/**b/`  `//sbsb`
 
+![Sample](rejectedsample.png)
 
 ## Handwritten
 
