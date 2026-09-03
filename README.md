@@ -67,7 +67,7 @@ F  = { q4 }
 
 ![Sample](acceptedsample.png)
 
-**Rejected:** `/**`  `/**/s/*bb*/`  `sbs/**/bs`  `/*/`  `/**b/`  `//sbsb`
+**Rejected:** `/**`  `/**/s/*bb*/`  `sbs/**/bs`  `/*/`  `/**b/`  `//bb`
 
 ![Sample](rejectedsample.png)
 
