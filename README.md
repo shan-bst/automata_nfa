@@ -8,12 +8,6 @@ A C implementation of a nondeterministic finite automaton that recognizes a sing
 
 The machine reads the opening delimiter `/*`, then the comment body, then the closing delimiter `*/`. Every move that isn't listed in the transition table leads to a dedicated trap state `qtrap`, so the automaton never gets stuck — an invalid string just drains into the trap and stays there.
 
-## Diagram
-
-The diagram shows five "working" states `q0 → q1 → q2 → q3 → q4` in a left-to-right chain, each connected by the symbol that advances it (`/`, `*`, `*`, `/`). `q2` and `q3` also have self-loops for the characters that don't advance the match, and a curved edge from `q3` back to `q2` for when a run of stars is broken by an ordinary character. Every state also has a transition into `qtrap` (shown as dashed red arrows) for any symbol not already accounted for.
-
-![State Diagram](state_diagram.png)
-
 ## States
 
 | State | Meaning |
@@ -73,4 +67,5 @@ F  = { q4 }
 
 ## Handwritten
 
-![Handwritten Work](handwritten.png)
+![Handwritten Work](handwritten.jpg)
+![Handwritten Work](hand_written.jpg)
